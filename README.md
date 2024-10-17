@@ -11,8 +11,9 @@ Grocery List
 ### Technology Stack
 
 PostGres
-Python
-HTML 5, CSS, ES2020
+Python / FastAPI
+
+Demo Admin Panel: HTML 5, CSS, ES2020
 
 [DB Setup Instructions](db/README.md)
 

@@ -3,22 +3,22 @@ version: '3.8'
 services:
   postgres:
     image: postgres:latest
-    container_name: my_postgres_db
+    container_name: db_infoboard
     environment:
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-      POSTGRES_DB: mydatabase
+      POSTGRES_USER: ib_admin
+      POSTGRES_PASSWORD: ib_password!2024
+      POSTGRES_DB: infoboard
     ports:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # Mount init script
     networks:
-      - my_network
+      - infoboard_net
 
 volumes:
   postgres_data:
 
 networks:
-  my_network:
+  infoboard_net:
     driver: bridge
