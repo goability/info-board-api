@@ -20,7 +20,7 @@ Demo Admin Panel: HTML 5, CSS, ES2020
 
 # Current Goals and Status
 
-- [ ] Setup DB Users, UserTasks
+- [ ] DB - Users, UserTasks
 - [ ] DB - UserMessages
 - [ ] DB - GroceryList, Grocery Tasks
 - [ ] DB - CalendarEvents
